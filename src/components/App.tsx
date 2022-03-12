@@ -1,4 +1,5 @@
 import Event from "../components/Event/Event";
+import UserSearch from "./Refs/Ref";
 
 const users = [
   {
@@ -14,6 +15,7 @@ const App = (): JSX.Element => {
   return (
     <div>
       <Event />
+      <UserSearch />
     </div>
   );
 };

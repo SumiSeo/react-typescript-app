@@ -8,7 +8,7 @@ import { useRef, useEffect } from "react";
 
 const UserSearch = (): JSX.Element => {
   useEffect(() => {
-    console.log(inputRef.current?.focus);
+    inputRef.current?.focus();
   }, []);
   const inputRef = useRef<HTMLInputElement | null>(null);
   return (
