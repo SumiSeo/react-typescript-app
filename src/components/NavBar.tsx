@@ -1,5 +1,3 @@
-import { setSourceMapRange } from "typescript";
-
 interface PropsTypes {
   setPage: React.Dispatch<React.SetStateAction<string>>;
 }
@@ -7,7 +5,7 @@ interface PropsTypes {
 const Navbar = (props: PropsTypes): JSX.Element => {
   return (
     <nav>
-      <button onClick={() => props?.setPage("planet")}>Planets</button>
+      <button onClick={() => props?.setPage("planets")}>Planets</button>
       <button onClick={() => props?.setPage("people")}>People</button>
     </nav>
   );
